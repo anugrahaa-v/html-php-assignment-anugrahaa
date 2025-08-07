@@ -1,0 +1,13 @@
+<?php
+function deal() {
+  $costA = 25 / 11;
+  $costB = 23 / 9;
+
+  if ($costA < $costB) {
+    echo "Drink A is cheaper per litre.";
+  } else {
+    echo "Drink B is cheaper per litre.";
+  }
+}
+deal();
+?>
