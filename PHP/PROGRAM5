@@ -1,0 +1,13 @@
+?php
+$item1_price = 100; $item1_qty = 2;
+$item2_price = 50;  $item2_qty = 3;
+$item3_price = 30;  $item3_qty = 1;
+
+$subtotal = ($item1_price * $item1_qty) + ($item2_price * $item2_qty) + ($item3_price * $item3_qty);
+$tax = $subtotal * 0.10;
+$total = $subtotal + $tax;
+
+echo "Subtotal: Rs. $subtotal<br>";
+echo "Tax (10%): Rs. $tax<br>";
+echo "Total Cost: Rs. $total<br>";
+?>
