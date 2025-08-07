@@ -1,0 +1,47 @@
+
+<html>
+<head>
+  <title>Anugrahaa V</title>
+  <style>
+    body { font-family: Arial; margin: 0; background: #fff0f5; color: #333; }
+    header, footer { background: #ff69b4; color: white; text-align: center; padding: 15px; }
+    .box { background: white; border: 2px solid #ffb6c1; border-radius: 10px; margin: 15px; padding: 15px; }
+    h1, h2 { color: #ff1493; }
+    a { color: #ff1493; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Anugrahaa V</h1>
+    <p>B.Sc. CS | PSGR Krishnammal College for Women</p>
+    <p><a href="mailto:anugrahaa.cs@gmail.com">Email</a> | 
+       <a href="https://github.com/anugrahaa-v">GitHub</a> | 
+       <a href="https://www.linkedin.com/in/v-anugrahaa">LinkedIn</a></p>
+  </header>
+
+  <div class="box">
+    <h2>About Me</h2>
+    <p>CS student with interest in PHP, Java, and MySQL. Quick learner and team-friendly, aiming to build real-world solutions.</p>
+  </div>
+
+  <div class="box">
+    <h2>Internship</h2>
+    <p>Worked at Ashika Readymade, Madurai. Used SMART 6.0 for sales, inventory, and reporting.</p>
+  </div>
+
+  <div class="box">
+    <h2>Skills & Projects</h2>
+    <ul>
+      <li>Java, SQLPlus, PHP</li>
+      <li>Online Banking Simulation</li>
+      <li>Currency Converter</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Anugrahaa V
+  </footer>
+
+</body>
+</html>
