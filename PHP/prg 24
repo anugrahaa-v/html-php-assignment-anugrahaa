@@ -1,0 +1,13 @@
+<?php
+$str = "  Hello everyone from PHP!  ";
+
+echo trim($str) . "\n";
+echo strlen($str) . "\n";
+echo str_word_count($str) . "\n";
+echo strrev($str) . "\n";
+echo strtoupper($str) . "\n";
+echo strtolower($str) . "\n";
+echo str_replace("PHP", "Code", $str) . "\n";
+echo substr($str, 6, 5) . "\n";
+echo strpos($str, "World") . "\n";
+?>
