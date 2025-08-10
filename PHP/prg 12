@@ -1,0 +1,13 @@
+<?php
+$marks = (float)readline("Enter the student's marks (%): ");
+
+if ($marks >= 75) {
+    echo "Grade: First Class\n";
+} elseif ($marks >= 60 && $marks <= 74) {
+    echo "Grade: Second Class\n";
+} elseif ($marks >= 40 && $marks <= 59) {
+    echo "Grade: Third Class\n";
+} else {
+    echo "Grade: Fail\n";
+}
+?>
