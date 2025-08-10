@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Highest and Lowest Finder</title>
+</head>
+<body>
+
+<?php
+function findHighLow($arr) {
+    $max = max($arr);
+    $min = min($arr);
+    return ["highest" => $max, "lowest" => $min];
+}
+
+$numbers = [12, 45, 3, 78, 23, 9];
+
+$result = findHighLow($numbers);
+
+echo "<h3>Array: " . implode(", ", $numbers) . "</h3>";
+echo "<p>Highest Value: " . $result['highest'] . "</p>";
+echo "<p>Lowest Value: " . $result['lowest'] . "</p>";
+?>
+
+</body>
+</html>
