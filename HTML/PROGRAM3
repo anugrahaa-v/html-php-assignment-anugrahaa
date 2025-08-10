@@ -1,47 +1,95 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Anugrahaa V</title>
-  <style>
-    body { font-family: Arial; margin: 0; background: #fff0f5; color: #333; }
-    header, footer { background: #ff69b4; color: white; text-align: center; padding: 15px; }
-    .box { background: white; border: 2px solid #ffb6c1; border-radius: 10px; margin: 15px; padding: 15px; }
-    h1, h2 { color: #ff1493; }
-    a { color: #ff1493; text-decoration: none; }
-  </style>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #333, #555);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background: #444;
+            text-align: center;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+            background: #f4f4f4;
+        }
+        .projects {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            padding: 1rem;
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .about {
+            background: white;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Anugrahaa V</h1>
-    <p>B.Sc. CS | PSGR Krishnammal College for Women</p>
-    <p><a href="mailto:anugrahaa.cs@gmail.com">Email</a> | 
-       <a href="https://github.com/anugrahaa-v">GitHub</a> | 
-       <a href="https://www.linkedin.com/in/v-anugrahaa">LinkedIn</a></p>
-  </header>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my personal website</p>
+    </header>
 
-  <div class="box">
-    <h2>About Me</h2>
-    <p>CS student with interest in PHP, Java, and MySQL. Quick learner and team-friendly, aiming to build real-world solutions.</p>
-  </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
 
-  <div class="box">
-    <h2>Internship</h2>
-    <p>Worked at Ashika Readymade, Madurai. Used SMART 6.0 for sales, inventory, and reporting.</p>
-  </div>
+    <main>
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="card">🌐 Web Design Projects</div>
+            <div class="card">🗄 MySQL Projects</div>
+            <div class="card">☕ Java Projects</div>
+        </div>
 
-  <div class="box">
-    <h2>Skills & Projects</h2>
-    <ul>
-      <li>Java, SQLPlus, PHP</li>
-      <li>Online Banking Simulation</li>
-      <li>Currency Converter</li>
-    </ul>
-  </div>
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Hi! I’m Anugraha V, a passionate Computer Science enthusiast. I love creating clean, user-friendly websites and exploring new technologies. My interests include web development, problem-solving, and learning about emerging trends in AI. I believe in continuous learning and enjoy working on creative projects that make an impact.</p>
+        </div>
+    </main>
 
-  <footer>
-    &copy; 2025 Anugrahaa V
-  </footer>
+    <footer>
+        &copy; 2025 My Portfolio | Designed by Anugraha V
+    </footer>
 
 </body>
 </html>
