@@ -1,0 +1,16 @@
+<?php
+// Prioritize POST, else GET
+$name = $_POST['name'] ?? $_GET['name'] ?? 'Guest';
+?>
+
+<form method="get" action="">
+    <input type="text" name="name" placeholder="GET name">
+    <button type="submit">Send GET</button>
+</form>
+
+<form method="post" action="">
+    <input type="text" name="name" placeholder="POST name">
+    <button type="submit">Send POST</button>
+</form>
+
+<p>Hello, <?php echo htmlspecialchars($name); ?>!</p>
