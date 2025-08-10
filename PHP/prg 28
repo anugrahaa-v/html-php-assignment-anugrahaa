@@ -1,0 +1,10 @@
+<?php
+$a = 55;
+$b = "30";
+$c = 10;
+
+var_dump($a == $b);   
+var_dump($a === $b);  
+var_dump($a == $c);   
+var_dump($a === $c);  
+?>
