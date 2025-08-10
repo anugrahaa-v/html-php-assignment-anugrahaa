@@ -1,0 +1,37 @@
+<?php
+$balance = 1000;
+
+while (true) {
+    echo "\n1. Check Balance\n2. Deposit\n3. Withdraw\n4. Exit\nChoose: ";
+    $choice = (int)readline();
+
+    switch ($choice) {
+        case 1:
+            echo "Balance: ₹$balance\n";
+            break;
+        case 2:
+            $deposit = (float)readline("Enter deposit amount: ");
+            if ($deposit > 0) {
+                $balance += $deposit;
+                echo "Deposited. New Balance: ₹$balance\n";
+            } else {
+                echo "Invalid amount!\n";
+            }
+            break;
+        case 3:
+            $withdraw = (float)readline("Enter withdraw amount: ");
+            if ($withdraw > 0 && $withdraw <= $balance) {
+                $balance -= $withdraw;
+                echo "Withdrawn. New Balance: ₹$balance\n";
+            } else {
+                echo "Invalid or insufficient balance!\n";
+            }
+            break;
+        case 4:
+            echo "Thank you!\n";
+            exit;
+        default:
+            echo "Invalid option.\n";
+    }
+}
+?>
