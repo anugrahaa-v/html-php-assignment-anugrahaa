@@ -3,60 +3,12 @@
 <head>
     <title>My Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        header {
-            background: linear-gradient(90deg, #333, #555);
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        nav {
-            background: #444;
-            text-align: center;
-            padding: 0.5rem;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 2rem;
-            background: #f4f4f4;
-        }
-        .projects {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .card {
-            background: white;
-            padding: 1rem;
-            flex: 1;
-            min-width: 200px;
-            text-align: center;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-        .about {
-            background: white;
-            padding: 1rem;
-            margin-top: 2rem;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 0.5rem;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; }
+        header, footer { background: #333; color: white; text-align: center; }
+        nav { background: #444; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 5px; display: inline-block; }
+        main { background: #f4f4f4; }
+        .projects div { background: #ddd; display: inline-block; margin: 5px; }
     </style>
 </head>
 <body>
@@ -76,15 +28,13 @@
     <main>
         <h2>My Projects</h2>
         <div class="projects">
-            <div class="card">🌐 Web Design Projects</div>
-            <div class="card">🗄 MySQL Projects</div>
-            <div class="card">☕ Java Projects</div>
+            <div>🌐 Web Design Projects</div>
+            <div>🗄 MySQL Projects</div>
+            <div>☕ Java Projects</div>
         </div>
 
-        <div class="about">
-            <h2>About Me</h2>
-            <p>Hi! I’m Anugraha V, a passionate Computer Science enthusiast. I love creating clean, user-friendly websites and exploring new technologies. My interests include web development, problem-solving, and learning about emerging trends in AI. I believe in continuous learning and enjoy working on creative projects that make an impact.</p>
-        </div>
+        <h2>About Me</h2>
+        <p>Hi! I’m Anugraha V, a passionate Computer Science enthusiast. I love creating user-friendly websites and exploring new technologies.</p>
     </main>
 
     <footer>
