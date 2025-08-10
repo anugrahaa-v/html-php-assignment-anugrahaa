@@ -1,0 +1,7 @@
+<?php
+echo "Random number (1-100): " . rand(1, 100) . "\n";
+echo "Absolute of -15: " . abs(-15) . "\n";
+echo "String Replace: " . str_replace("anu", "anugrahaa", "Hello anu") . "\n";
+echo "Value of Pi: " . pi() . "\n";
+echo "Ceil of 4.3: " . ceil(4.3) . "\n";
+?>
