@@ -1,5 +1,5 @@
 <?php
-// Prioritize POST, else GET
+
 $name = $_POST['name'] ?? $_GET['name'] ?? 'Guest';
 ?>
 
