@@ -1,0 +1,5 @@
+<?php
+$text = "PHP is great. PHP is powerful.";
+$word = "PHP";
+echo substr_count($text, $word);
+?>
