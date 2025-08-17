@@ -1,0 +1,8 @@
+<?php
+try {
+    $result = 10 / 0;
+    echo $result;
+} catch (DivisionByZeroError $e) {
+    echo "Error: " . $e->getMessage();
+}
+?>
