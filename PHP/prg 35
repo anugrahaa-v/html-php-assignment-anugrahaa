@@ -1,0 +1,15 @@
+<?php
+$sentences = [
+    "I like learning PHP.",
+    "JavaScript is fun too."
+];
+$search = "PHP";
+foreach ($sentences as $sentence) {
+    if (strpos($sentence, $search) !== false) {
+        echo "Found '$search' in: $sentence<br>";
+    } else {
+        echo "'$search' not found in: $sentence<br>";
+    }
+}
+?>
+ 
