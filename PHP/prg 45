@@ -1,0 +1,18 @@
+<?php
+function arrayDiffRecursive($a1, $a2) {
+    $diff = [];
+    foreach ($a1 as $k => $v) {
+        if (!isset($a2[$k])) $diff[$k] = $v;
+        elseif (is_array($v)) {
+            $d = arrayDiffRecursive($v, $a2[$k]);
+            if ($d) $diff[$k] = $d;
+        } elseif ($v !== $a2[$k]) $diff[$k] = $v;
+    }
+    return $diff;
+}
+
+$a1 = ['name' => 'John', 'info' => ['age' => 30, 'city' => 'NY']];
+$a2 = ['name' => 'John', 'info' => ['age' => 25, 'city' => 'NY']];
+
+print_r(arrayDiffRecursive($a1, $a2));
+?>
