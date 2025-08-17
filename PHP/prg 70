@@ -1,0 +1,13 @@
+<?php
+if (isset($_POST['numbers'])) {
+    $numbers = explode(',', $_POST['numbers']);
+    echo "Input numbers as array:\n";
+    print_r($numbers);
+}
+?>
+
+<form method="post">
+    Enter numbers (comma separated): 
+    <input type="text" name="numbers" required>
+    <input type="submit" value="Submit">
+</form>
