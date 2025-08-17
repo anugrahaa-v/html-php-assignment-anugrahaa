@@ -1,0 +1,7 @@
+<?php
+$fruits = ["apple", "banana", "cherry", "date"];
+
+$fruits = array_slice($fruits, 1); // Skip the first element
+
+print_r($fruits);
+?>
