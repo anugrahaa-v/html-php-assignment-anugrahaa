@@ -3,3 +3,8 @@ $fruits = ["Apple", "Banana", "Mango"];
 array_pop($fruits);
 print_r($fruits);
 ?>
+<?php
+$fruits = ["Apple", "Banana"];
+array_push($fruits, "Mango", "Orange");
+print_r($fruits);
+?>
