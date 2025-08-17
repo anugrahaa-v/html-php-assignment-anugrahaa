@@ -1,0 +1,7 @@
+<?php
+$birthday = "10-25"; // MM-DD
+$today = new DateTime();
+$next = new DateTime(date("Y") . "-$birthday");
+if ($today > $next) $next->modify('+1 year');
+echo "Birthday in " . $today->diff($next)->days . " days!";
+?>
