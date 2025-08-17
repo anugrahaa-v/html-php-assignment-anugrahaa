@@ -1,0 +1,5 @@
+<?php
+file_put_contents("test.txt", "Hello PHP!");
+echo file_get_contents("test.txt");
+unlink("test.txt");
+?>
