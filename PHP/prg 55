@@ -1,0 +1,16 @@
+<?php
+$str = "Hello";
+$stack = [];
+
+// Step 1: Put each character into the stack (array)
+for ($i = 0; $i < strlen($str); $i++) {
+    array_push($stack, $str[$i]);
+}
+
+// Step 2: Take characters out of the stack one by one
+$reversed = "";
+while (!empty($stack)) {
+    $reversed .= array_pop($stack);
+}
+echo $reversed; 
+?>
