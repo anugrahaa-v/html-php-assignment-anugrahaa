@@ -1,0 +1,21 @@
+<?php
+$students = [
+    ["name" => "Alice", "score" => 85],
+    ["name" => "Bob", "score" => 72],
+    ["name" => "Charlie", "score" => 60],
+];
+function calculateGrade($score) {
+    if ($score >= 90) return 'A';
+    elseif ($score >= 80) return 'B';
+    elseif ($score >= 70) return 'C';
+    elseif ($score >= 60) return 'D';
+    else return 'F';
+}
+foreach ($students as &$student) {
+    $student['grade'] = calculateGrade($student['score']);
+}
+unset($student);
+foreach ($students as $student) {
+    echo "Name: {$student['name']}, Score: {$student['score']}, Grade: {$student['grade']}<br>";
+}
+?>
