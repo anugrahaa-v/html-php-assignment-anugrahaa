@@ -1,0 +1,7 @@
+<?php
+$sentence = "This is a test. This test is simple, simple and clear!";
+preg_match_all('/\b\w+\b/', strtolower($sentence), $m);
+$counts = [];
+foreach ($m[0] as $w) $counts[$w] = ($counts[$w] ?? 0) + 1;
+foreach ($counts as $word => $count) echo "$word : $count\n";
+?>
