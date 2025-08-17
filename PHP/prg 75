@@ -1,0 +1,12 @@
+<?php
+function appendLineToFile($filename, $newLineContent) {
+    file_put_contents($filename, rtrim($newLineContent, "\r\n") . PHP_EOL, FILE_APPEND);
+}
+
+try {
+    appendLineToFile("example.txt", "This is a new line.");
+    echo "Line appended successfully.";
+} catch (Exception $e) {
+    echo "Error: " . $e->getMessage();
+}
+?>
