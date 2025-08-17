@@ -1,0 +1,33 @@
+<?php
+
+// Player stats (using numerical values)
+$players = [
+    ['name' => 'Alice Johnson', 'points' => 22, 'assists' => 6, 'rebounds' => 9],
+    ['name' => 'Bob Williams', 'points' => 18, 'assists' => 8, 'rebounds' => 7],
+];
+
+// Calculate Performance Index (PI)
+foreach ($players as &$p) {
+    $p['pi'] = $p['points'] + ($p['assists'] * 1.5) + ($p['rebounds'] * 1.2);
+}
+
+// Rank players by PI
+usort($players, fn($a, $b) => $b['pi'] <=> $a['pi']);
+// Display Rankings
+echo "🏅 Player Rankings:\n";
+foreach ($players as $i => $p) {
+    echo "#" . ($i+1) . " {$p['name']} - PI: {$p['pi']}\n";
+}
+
+// Calculate and show Averages
+$total = ['points' => 0, 'assists' => 0, 'rebounds' => 0];
+foreach ($players as $p) {
+    foreach ($total as $key => &$val) $val += $p[$key];
+}
+
+$count = count($players);
+echo "\n📊 Average Stats:\n";
+foreach ($total as $k => $v) {
+    echo ucfirst($k) . ": " . round($v / $count, 2) . "\n";
+}
+?>
