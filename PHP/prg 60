@@ -1,0 +1,17 @@
+<?php
+function searchValue($array, $value) {
+    return in_array($value, $array);
+}
+
+$assocArray = [
+    "name" => "Alice",
+    "email" => "alice@example.com",
+    "city" => "New York"
+];
+
+if (searchValue($assocArray, "Alice")) {
+    echo "Value found!";
+} else {
+    echo "Value not found.";
+}
+?>
