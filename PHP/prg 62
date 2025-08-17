@@ -1,0 +1,13 @@
+<?php
+foreach ([1.65, 1.65, -1.54] as $v)
+    echo "Original: $v => Rounded: " . round($v, 1) . "\n";
+?>
+
+<?php
+$values = [1.65, 1.65, -1.54];
+
+foreach ($values as $value) {
+    $rounded = round($value, 1); // Round to 1 decimal place
+    echo "Original: $value => Rounded: $rounded\n";
+}
+?>
