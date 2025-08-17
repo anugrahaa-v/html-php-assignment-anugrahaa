@@ -1,0 +1,7 @@
+<?php
+$text = "PHP is powerful. PHP is popular. I love PHP!";
+$search = "/\bPHP\b/";
+$replace = "Python";
+$result = preg_replace($search, $replace, $text);
+echo $result;
+?>
