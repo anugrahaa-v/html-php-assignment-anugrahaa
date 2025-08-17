@@ -1,0 +1,6 @@
+<?php
+$file = fopen("example.txt", "r");
+$content = fread($file, filesize("example.txt"));
+echo $content;
+fclose($file);
+?>
