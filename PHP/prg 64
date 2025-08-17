@@ -1,0 +1,18 @@
+<?php
+$sales = [1000, 1100, 1210, 1331, 1464, 1610];
+$growth = [];
+
+for ($i = 1; $i < count($sales); $i++)
+    $growth[] = ($sales[$i] - $sales[$i - 1]) / $sales[$i - 1];
+
+$avg = array_sum($growth) / count($growth);
+$next = end($sales);
+$forecast = [];
+
+for ($i = 0; $i < 3; $i++) {
+    $next *= (1 + $avg);
+    $forecast[] = round($next, 2);
+}
+
+print_r($forecast);
+?>
