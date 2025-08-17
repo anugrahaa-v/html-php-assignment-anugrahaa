@@ -1,0 +1,7 @@
+<?php
+$arr = ['Apple', 'Banana', 'Cherry'];
+$lower = array_map('strtolower', $arr);
+$upper = array_map('strtoupper', $arr);
+print_r($lower);
+print_r($upper);
+?>
