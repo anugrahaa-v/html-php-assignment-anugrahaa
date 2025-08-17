@@ -1,0 +1,11 @@
+<?php
+$arr = ['a', 'b', 'c', 'd'];
+
+// Step 1 & 2: Remove element at index 1 ('b')
+unset($arr[1]);
+
+// Optional Step 3: Reindex the array
+$arr = array_values($arr);
+
+print_r($arr);
+?>
