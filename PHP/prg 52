@@ -1,0 +1,18 @@
+<?php
+
+// Stack (LIFO)(push + pop)
+
+$stack = [];
+array_push($stack, 'A'); 
+array_push($stack, 'B'); 
+$itemStack = array_pop($stack);
+echo "Popped from stack: $itemStack\n"; 
+
+// Queue (FIFO)(enqueue + dequeue)
+
+$queue = [];
+array_push($queue, 'A'); 
+array_push($queue, 'B'); 
+$itemQueue = array_shift($queue); 
+echo "Dequeued from queue: $itemQueue\n"; 
+?>
