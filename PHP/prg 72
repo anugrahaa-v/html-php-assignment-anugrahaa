@@ -1,0 +1,17 @@
+<?php
+session_start(); // Start session
+
+// Set session variable
+$_SESSION["username"] = "admin";
+
+// Display session data
+echo "Session username: " . $_SESSION["username"] . "<br>";
+
+// Unset all session variables
+session_unset();
+echo "Session variables are unset.<br>";
+
+// Destroy the session
+session_destroy();
+echo "Session destroyed.";
+?>
