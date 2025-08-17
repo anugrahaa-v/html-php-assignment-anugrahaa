@@ -1,0 +1,14 @@
+<?php
+$queue = [];
+
+// Add to queue
+array_push($queue, 'Alice');
+array_push($queue, 'Bob');
+array_push($queue, 'Charlie');
+
+// Process queue
+echo array_shift($queue) . " booked\n"; // Alice
+echo array_shift($queue) . " booked\n"; // Bob
+
+print_r($queue); // Remaining: Charlie
+?>
