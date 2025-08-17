@@ -1,0 +1,9 @@
+<?php
+$arr = [10, 20, 30];
+
+echo array_pop($arr) . "\n";   // Removes last: 30
+print_r($arr);
+
+echo array_shift($arr) . "\n"; // Removes first: 10
+print_r($arr);
+?>
