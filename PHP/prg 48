@@ -1,0 +1,18 @@
+<?php
+$names = ['Alice', 'Bob', 'Charlie'];
+
+$record_no = 1;
+foreach ($names as $name) {
+    echo "Record #$record_no: $name<br>";
+    $record_no++;
+}
+?>
+<?php
+$page = 3;      // current page
+$limit = 5;     // records per page
+$start = ($page - 1) * $limit + 1;
+
+for ($i = 0; $i < $limit; $i++) {
+    echo "Record #" . ($start + $i) . "<br>";
+}
+?>
