@@ -1,0 +1,14 @@
+<?php
+if ($_POST) {
+    $email = $_POST['email'];
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Valid Email<br>Domain: " . explode("@", $email)[1];
+    } else {
+        echo "Invalid Email";
+    }
+}
+?>
+<form method="POST">
+  Email: <input name="email" required>
+  <button>Submit</button>
+</form>
