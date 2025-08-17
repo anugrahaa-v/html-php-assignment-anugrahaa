@@ -1,0 +1,49 @@
+<?php
+// Songs and Playlists
+$songs = [
+    ['id' => 1, 'title' => 'Imagine', 'artist' => 'John Lennon'],
+    ['id' => 2, 'title' => 'Hey Jude', 'artist' => 'The Beatles']
+];
+$playlists = [];
+
+// Create Playlist
+function createPlaylist(&$playlists, $name) {
+    $playlists[] = ['id' => time(), 'name' => $name, 'songs' => []];
+}
+
+// Add Song
+function addSong(&$playlists, $pid, $sid) {
+    foreach ($playlists as &$p) if ($p['id'] === $pid && !in_array($sid, $p['songs'])) $p['songs'][] = $sid;
+}
+
+// Remove Song
+function removeSong(&$playlists, $pid, $sid) {
+    foreach ($playlists as &$p) if ($p['id'] === $pid)
+        $p['songs'] = array_filter($p['songs'], fn($id) => $id !== $sid);
+}
+
+// View Playlist
+function viewPlaylist($playlists, $songs, $pid) {
+    foreach ($playlists as $p) if ($p['id'] === $pid) {
+        return array_map(fn($id) => array_values(array_filter($songs, fn($s) => $s['id'] === $id))[0], $p['songs']);
+    }
+    return [];
+}
+
+// Swap Songs
+function swapSongs(&$playlists, $pid, $i, $j) {
+    foreach ($playlists as &$p)
+        if ($p['id'] === $pid) [$p['songs'][$i], $p['songs'][$j]] = [$p['songs'][$j], $p['songs'][$i]];
+}
+
+// Delete Playlist
+function deletePlaylist(&$playlists, $pid) {
+    foreach ($playlists as $i => $p) if ($p['id'] === $pid) unset($playlists[$i]);
+}
+
+// Search Songs
+function searchSongs($songs, $key) {
+    return array_filter($songs, fn($s) =>
+        stripos($s['title'], $key) !== false || stripos($s['artist'], $key) !== false);
+}
+?>
