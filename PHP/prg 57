@@ -1,0 +1,7 @@
+<?php
+if (preg_match("/Hello\d+/", "Hello123")) {
+    echo "Match!";
+} else {
+    echo "No match";
+}
+?>
