@@ -1,0 +1,8 @@
+?php
+$arr = ['a', 'b', 'c'];
+
+$first = array_shift($arr);  
+
+array_unshift($arr, 'x', 'y');
+print_r($arr);
+?>
