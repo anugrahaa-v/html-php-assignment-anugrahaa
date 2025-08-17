@@ -1,0 +1,12 @@
+<?php
+$array = ['apple', 'banana', 'cherry'];
+$value = 'banana';
+
+$index = array_search($value, $array);
+
+if ($index !== false) {
+    echo "Index of $value is $index";
+} else {
+    echo "$value not found in the array";
+}
+?>
