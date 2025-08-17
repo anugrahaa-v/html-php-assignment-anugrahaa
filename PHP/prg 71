@@ -1,0 +1,17 @@
+<?php
+$filename = "demo.txt";
+
+// Write to file
+$f = fopen($filename, "w");
+fwrite($f, "Hello, World!");
+fclose($f);
+
+// Read from file
+$f = fopen($filename, "r");
+echo fread($f, filesize($filename)) . "\n";
+fclose($f);
+
+// Delete the file
+unlink($filename);
+echo "File deleted.\n";
+?>
