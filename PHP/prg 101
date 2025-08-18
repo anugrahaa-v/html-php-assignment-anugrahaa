@@ -1,0 +1,9 @@
+<?php
+setcookie('cookie_name', 'TestValue', time() + 3600);
+
+if (isset($_COOKIE['cookie_name'])) {
+    echo "Cookie value: " . $_COOKIE['cookie_name'];
+} else {
+    echo "Cookie not set.";
+}
+?>
